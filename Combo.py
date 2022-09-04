@@ -1,6 +1,8 @@
 import random
 import tkinter as tk
 
+
+
 characters = ["Mario", "Luigi", "Peach","Daisy", "Rosalina", "Tanooki Mario",
 "Cat Peach", "Yoshi","Toad","Koopa Troopa","Shy Guy","Lakitu","Toadette",
 "King Boo","Baby Mario","Baby Luigi","Baby Peach","Baby Daisy","Baby Rosalina",
@@ -60,9 +62,9 @@ glider = random.choice(Gliders)
 
 
 print("\n","Character:", character, "\n",
-      "Kart Body:", kartbody, "\n", 
-      "Wheel Type:", wheel, "\n",
-      "Glider Type:", glider, "\n")
+    "Kart Body:", kartbody, "\n", 
+    "Wheel Type:", wheel, "\n",
+    "Glider Type:", glider, "\n")
 
 
 
@@ -81,10 +83,12 @@ def clicked():
         names_label = tk.Label(window)
         # give it a position using grid
         names_label.grid(row=int(ind)+1, column=0)
-        # print the fruit name in the label
+        # print the part name in the label
         names_label.config(text=part)
 
 btn = tk.Button(window, text="Kart Combination", command=clicked)
 btn.grid(column=0, row=0, padx=30, pady=2)
 
 window.mainloop()
+
+
