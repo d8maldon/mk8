@@ -34,11 +34,27 @@ elif character == "Link":
     links = ["Normal Link","Link (Breath of the Wild)"]
     character = random.choice(links)
 
-print(character)
 
 
 
 
+kartbody = ["Standard Kart"," Pipe Frame"," Mach 8"," Steel Driver"," Cat Cruiser"," Circuit Special"," Tri-Speeder"," Badwagon",
+" Prancer"," Biddybuggy"," Landship"," Sneeker"," Sports Coupe"," Gold Standard"," GLA"," W 25 Silver Arrow",
+"300 SL Roadster"," Blue Falcon"," Tanooki Kart"," B Dasher"," Streetle"," P-Wing"," Koopa Clown", 
+"Standard Bike"," The Duke"," Flame Rider"," Varmint"," Mr Scooty"," Master Cycle Zero","City Tripper",
+"Comet"," Sport Bike"," Jet Bike"," Yoshi Bike"," Master Cycle",
+"Standard ATV"," Wild Wiggler"," Teddy Buggy"," Bone Rattler"," Splat Buggy","Inkstriker"]
+
+
+
+
+
+
+
+
+
+
+print(character, kartbody, wheels, glider)
 
 
 
