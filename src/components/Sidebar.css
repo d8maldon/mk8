@@ -103,6 +103,13 @@
     box-shadow: 0 0 0 2px #0A84FF;
 }
 
+/* Fix option text visibility in dark mode */
+.manual-control select option,
+.optimizer-select option {
+    background-color: #222;
+    color: #fff;
+}
+
 .sidebar-divider {
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
