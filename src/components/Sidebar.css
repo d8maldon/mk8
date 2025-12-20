@@ -1,0 +1,144 @@
+.sidebar {
+    /* Frosted Glass Floating Card */
+    background: rgba(35, 35, 35, 0.65);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    /* iOS rounded corners */
+
+    padding: 2rem;
+    height: auto;
+    /* Float vertically */
+    max-height: 90vh;
+    /* Don't overflow screen */
+    overflow-y: auto;
+
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #fff;
+
+    /* Deep shadow for floating depth */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Hide scrollbar for clean look */
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    letter-spacing: -0.5px;
+}
+
+.sidebar-section h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+}
+
+.sidebar-hint {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.manual-control {
+    margin-bottom: 1.2rem;
+}
+
+.manual-control label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+    color: #ccc;
+    font-weight: 500;
+}
+
+/* iOS Select Style */
+.manual-control select,
+.optimizer-select {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.manual-control select:hover,
+.optimizer-select:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.manual-control select:focus,
+.optimizer-select:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px #0A84FF;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+/* iOS Primary Button */
+.optimize-button {
+    width: 100%;
+    padding: 0.9rem;
+    background: #0A84FF;
+    /* iOS Blue */
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(10, 132, 255, 0.3);
+    transition: all 0.2s;
+    margin-top: 1rem;
+}
+
+.optimize-button:hover {
+    background: #0077ED;
+    transform: scale(1.02);
+}
+
+.optimize-button:active {
+    transform: scale(0.98);
+}
+
+.sidebar-note {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+    text-align: center;
+}
