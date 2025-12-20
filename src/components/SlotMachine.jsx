@@ -8,7 +8,8 @@ const SlotItem = ({ item, category }) => {
     // User data has names like "Baby Mario". File might be "Baby Mario.png".
     // I'll assume exact match or simple sanitization if verified. 
     // For now, let's use the name as is.
-    const imgSrc = `/data/images/${category}/${item.name}.png`; // Assuming user might put images here
+    // Use BASE_URL to handle deployment to /mk8/ subpath
+    const imgSrc = `${import.meta.env.BASE_URL}data/images/${category}/${item.name}.png`;
     // But since we don't have images yet, this will fail. 
     // We should fallback to a nice placeholders.
     // I'll use a text overlay if image fails (handled via functionality or just CSS z-index).
